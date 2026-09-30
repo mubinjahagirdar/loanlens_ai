@@ -18,4 +18,7 @@ View your app in AI Studio: https://ai.studio/apps/116c43f4-76e6-4ddd-baa4-3adf1
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+   ## 📄 Project Documentation
+
+[View AI Loan Eligibility Checker Documentation](./Docs1/AI%20LOAN%20ELIGIBILITY%20CHECKER%20mubin.docx)
 # loanlens_ai
