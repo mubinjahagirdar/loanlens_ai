@@ -1,0 +1,37 @@
+[debug] [2026-09-21T13:45:46.547Z] ----------------------------------------------------------------------
+[debug] [2026-09-21T13:45:46.558Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Victus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project loancheckerai
+[debug] [2026-09-21T13:45:46.560Z] CLI Version:   15.27.0
+[debug] [2026-09-21T13:45:46.560Z] Platform:      win32
+[debug] [2026-09-21T13:45:46.561Z] Node Version:  v24.15.0
+[debug] [2026-09-21T13:45:46.562Z] Detected Agent: github_copilot_vscode_agent
+[debug] [2026-09-21T13:45:46.562Z] Time:          Mon Sep 21 2026 19:15:46 GMT+0530 (India Standard Time)
+[debug] [2026-09-21T13:45:46.562Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-09-21T13:45:52.365Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-09-21T13:45:52.365Z] > authorizing via signed-in user (agraharisanjay681@gmail.com)
+[debug] [2026-09-21T13:45:52.365Z] [iam] checking project loancheckerai for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-09-21T13:45:52.397Z] Checked if tokens are valid: false, expires at: 1789916699502
+[debug] [2026-09-21T13:45:52.398Z] Checked if tokens are valid: false, expires at: 1789916699502
+[debug] [2026-09-21T13:45:52.399Z] > refreshing access token with scopes: []
+[debug] [2026-09-21T13:45:52.409Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-09-21T13:45:52.409Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-09-21T13:45:52.669Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-09-21T13:45:52.670Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-09-21T13:45:52.689Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/loancheckerai:testIamPermissions [none]
+[debug] [2026-09-21T13:45:52.690Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/loancheckerai:testIamPermissions  x-goog-user-project=loancheckerai
+[debug] [2026-09-21T13:45:52.690Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/loancheckerai:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-09-21T13:45:54.169Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/loancheckerai:testIamPermissions 403
+[debug] [2026-09-21T13:45:54.169Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/loancheckerai:testIamPermissions {"error":{"code":403,"message":"Caller does not have required permission to use project loancheckerai. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam?project=loancheckerai and then retry. Propagation of the new permission may take a few minutes.","status":"PERMISSION_DENIED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"USER_PROJECT_DENIED","domain":"googleapis.com","metadata":{"consoleUrl":"https://console.developers.google.com/iam-admin/iam?project=loancheckerai","service":"cloudresourcemanager.googleapis.com","consumer":"projects/loancheckerai","containerInfo":"loancheckerai"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"Caller does not have required permission to use project loancheckerai. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam?project=loancheckerai and then retry. Propagation of the new permission may take a few minutes."},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Google developer console IAM admin","url":"https://console.developers.google.com/iam-admin/iam?project=loancheckerai"}]}]}}
+[debug] [2026-09-21T13:45:54.172Z] [iam] error while checking permissions, command may fail: Request to https://cloudresourcemanager.googleapis.com/v1/projects/loancheckerai:testIamPermissions had HTTP Error: 403, Caller does not have required permission to use project loancheckerai. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam?project=loancheckerai and then retry. Propagation of the new permission may take a few minutes.
+[debug] [2026-09-21T13:45:54.174Z] Checked if tokens are valid: true, expires at: 1790001951670
+[debug] [2026-09-21T13:45:54.174Z] Checked if tokens are valid: true, expires at: 1790001951670
+[debug] [2026-09-21T13:45:54.175Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/loancheckerai [none]
+[debug] [2026-09-21T13:45:54.878Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/loancheckerai 403
+[debug] [2026-09-21T13:45:54.878Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/loancheckerai {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2026-09-21T13:45:54.878Z] Request to https://firebase.googleapis.com/v1beta1/projects/loancheckerai had HTTP Error: 403, The caller does not have permission
+[debug] [2026-09-21T13:45:55.021Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/loancheckerai had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Victus\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:53:12)
+    at RetryOperation._fn (C:\Users\Victus\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:415:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[error] 
+[error] Error: Failed to get Firebase project loancheckerai. Please make sure the project exists and your account has permission to access it.
