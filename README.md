@@ -19,6 +19,9 @@ View your app in AI Studio: https://ai.studio/apps/116c43f4-76e6-4ddd-baa4-3adf1
 3. Run the app:
    `npm run dev`
    ## 📄 Project Documentation
+## 📚 Documentation
 
-[View AI Loan Eligibility Checker Documentation](./Docs1/AI%20LOAN%20ELIGIBILITY%20CHECKER%20mubin.docx)
+The complete project documentation is available below:
+
+📄 **[Download Project Documentation](https://github.com/mubinjahagirdar/loanlens_ai/raw/refs/heads/main/Docs1/AI%20LOAN%20ELIGIBILITY%20CHECKER%20mubin.docx)**
 # loanlens_ai
